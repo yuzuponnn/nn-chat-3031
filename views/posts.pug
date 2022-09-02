@@ -17,7 +17,7 @@ html(lang="ja")
         input(type="hidden" name="oneTimeToken" value=oneTimeToken)
       div.form-group
         button(type="submit").btn.btn-primary 送信
-    a(href="/changeTheme").btn.btn-primary #{currentTheme==='light'?"ダークモード":"ライトモード"}へ切り替え
+    a(href="/changeTheme").btn.btn-primary.mb-3 #{currentTheme==='light'?"ダークモード":"ライトモード"}へ切り替え
 
     h2 投稿一覧
     each post in posts
